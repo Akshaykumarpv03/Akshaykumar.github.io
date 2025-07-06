@@ -1,0 +1,9 @@
+.mainbody{
+    background-color: black;
+    height: 800px;
+    width: 100%;
+}
+.custom-navbar {
+  background-color: rgb(14, 78, 255) !important;
+
+}
