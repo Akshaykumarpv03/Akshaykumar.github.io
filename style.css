@@ -4,6 +4,16 @@
     width: 100%;
 }
 .custom-navbar {
-  background-color: rgb(14, 78, 255) !important;
+  background-color: rgb(179, 0, 255) !important;
 
+}
+.nav-item{
+  font-size: 17px;
+}
+.navbar-brand-me-auto{
+  font-size: 30px;
+  color: white; 
+  font-family:Fantasy,papyrus;
+  text-decoration: none;
+  letter-spacing: 0.5px;
 }
