@@ -33,7 +33,7 @@ canvas {
 body {
     
  background: #0b53d9;
-background: radial-gradient(circle, rgba(11, 83, 217, 1) 45%, rgba(0, 0, 0, 1) 100%);
+background: black;
       height: 1000px;
    
     }
@@ -184,4 +184,11 @@ img {
     .js { width: 60%; background: #06f3ff; }  /* Teal for MySQL */
  
  
-
+#contact{
+  text-align: center;
+  height: 500px;
+  margin-top: 100px;
+}
+#contact-form{
+  color: white;
+}
