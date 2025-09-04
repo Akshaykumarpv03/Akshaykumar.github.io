@@ -5,9 +5,8 @@
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
 }
-
-
 
 .nav-item{
   font-size: 17px;
@@ -32,29 +31,34 @@ canvas {
     }
 body {
     
- background: #0b53d9;
-background: black;
+      background: #0b53d9;
+      background: black;
       height: 1000px;
    
     }
 .dp{
-  position:relative;
-  width: 100%;
-  height: 300px;
-  display: flex;
+  position:fixed;
+  width: 500px;
+  height: 500px;
   z-index: 1;
-  justify-content: center;
-  margin-top: 20px;
-  
+  margin-left: 100px;
+  position: sticky;
+  background:url("dp.jpeg")center/cover no-repeat;
+  background-size: contain;  
+  background-position: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
 }
  
 /* profile pic */
 #pp{
-    border: 5px solid white;
-    border-radius: 50%;
-  
+    border: 0px solid white;
+     background-attachment: fixed;
 }
+
+
+
 #particles {
   position: fixed;   /* Stays full screen */
   top: 0;
@@ -64,26 +68,18 @@ background: black;
   z-index: 0;        /* Background layer */
 }
 
-
-/* TEXT */
-#Journey{
-  padding-top: 100px;
-  text-align: center;
-  margin: 50px;
-  font-size:100px;
- font-family: "Allerta Stencil", sans-serif;
-  font-weight: 900;
-  font-style: normal;
- color: rgb(255, 255, 255);
- z-index: 5;
+#sticky-dp{
+  display: flex;
+  scrollbar-width: none;
 }
 
 /*Name and tag */
 #name-tag{
  text-align: center;
  color: white;
- margin: 20px;
- margin-bottom: 200px;
+ margin-bottom: 500px;
+padding-top: 200px;
+ justify-content: center;
 }
 
 /* About section */
@@ -92,8 +88,16 @@ background: black;
   padding-top: 100px;
   text-align: center;
   color: white;
+   margin-bottom: 300px;
 }
 
+.right-section{
+   flex: 1;
+      padding: 50px;
+      overflow-y: auto; /* enables scrolling */
+      height: 100vh;
+      scrollbar-width: none;
+}
 
 
 /* Project section */
@@ -184,10 +188,11 @@ img {
     .js { width: 60%; background: #06f3ff; }  /* Teal for MySQL */
  
  
-#contact{
-  text-align: center;
+#Contact{
+  text-align:center;
   height: 500px;
   margin-top: 100px;
+  justify-content: center;
 }
 #contact-form{
   color: white;

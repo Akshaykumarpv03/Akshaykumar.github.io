@@ -16,7 +16,7 @@
            <header>
             <nav class="navbar navbar-expand-lg navbar-light fixed-top  justify-content-end custom-navbar"  >
                 <div class="container-fluid justify-content-end" >
-                <a class="navbar-brand-me-auto"   href="#">Booting Up…</a>
+                <a class="navbar-brand-me-auto"   href="#">Welcome</a>
 
                 <button class="navbar-toggler "  type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active"   style="color: white;"  aria-current="page" href="#Journey">Home</a>
+                        <a class="nav-link active"   style="color: white;"  aria-current="page" href="#name-tag">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"   style="color: white;"  href="#about-section">About</a>
@@ -39,7 +39,7 @@
                         <a class="nav-link"  style="color: white;"   href="#Project">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"   style="color: white;"   href="#contact" tabindex="-1" aria-disabled="true">Contact me</a>
+                        <a class="nav-link"   style="color: white;"   href="#Contact" tabindex="-1">Contact me</a>
                     </li>
                     </ul>
                 </div>
@@ -48,29 +48,39 @@
         </header>
         <!-- Main body created for all the content -->
         <div class="main-body">
-          <h1 id="Journey">Journey So Far</h1>
+         
+          
+              <!-- div to cntain static dp and name till about -->
+              <div id="sticky-dp">
 
-          <!-- Image added -->
-          <section class="dp">
-              <img id="pp" src="dp.jpeg" alt="profile pic" height="300px" width="300px" >
-          </section>
 
-          <!-- name and tagline added -->
-          <div id="name-tag">
-            <h1 class="ntag">Akshay Here!</h1>
-            <p class="ntag" style="font-size: 20px;">Turning ideas into clean, functional code.</p>
-          </div>
+                    <!-- Image added  section added-->
+                    <div class="dp" id="home">
+                        <!-- <img id="pp" src="dp.jpeg" alt="profile pic" height="300px" width="300px" > -->
+                    </div>
 
-          <!-- About section -->
-           <div id="about-section">
-            <h2 style="font-size: 50px;">About</h2>
-            <br> 
-            <p style="font-size: 20px;">
-              Student at College of Enginering Trikaripur, pursuing Btech in Computer Science
-              And Enginering. <br> I’m passionate about learning, growing, and using my skills to<br>
-               build something meaningful and inspiring.
-            </p>
-           </div>
+                    
+                    <!-- Div for scrollable content -->
+                    <div class="right-section">
+                        <!-- name and tagline added -->
+                        <div id="name-tag" class="sect">
+                          <h1 class="ntag">Akshay Here!</h1>
+                          <p class="ntag" style="font-size: 20px;">Turning ideas into clean, functional code.</p>
+                        </div>
+
+                        <!-- About section -->
+                        <div id="about-section" class="sect">
+                          <h2 style="font-size: 50px;">About</h2>
+                          <br> 
+                          <p style="font-size: 20px;">
+                            Student at College of Enginering Trikaripur, pursuing Btech in Computer Science
+                            And Enginering. <br> I’m passionate about learning, growing, and using my skills to<br>
+                            build something meaningful and inspiring.
+                          </p>
+                        </div>
+                    </div>
+              </div>
+          
 
            <!-- Skills -->
             <div id="skill">
@@ -124,9 +134,6 @@
               </div>
             </div>
 
-
-
-
            <!-- Project -->
             <div id="Project">
               <h2 style="font-size: 50px; margin: 10px;">Projects</h2>
@@ -151,9 +158,9 @@
               </div>
               </div>
             </div>
-          
 
-            <div id="contact">
+           <!-- contact - section -->
+            <div id="Contact">
               <h2 style="font-size: 50px; color: white;">Contact</h2>
               <br>
               <div id="contact-form">
@@ -172,7 +179,9 @@
             </div>
 
         </div>
+    
 
+        <!-- cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
