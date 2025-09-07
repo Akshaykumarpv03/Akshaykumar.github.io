@@ -1,11 +1,11 @@
 .main-body{
   margin: 0;
   padding-top: 50px;
-   background: rgba(255, 255, 255, 0.05);
+   background: rgba(255, 255, 255, 0.09);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
+  
 }
 
 .nav-item{
@@ -38,8 +38,8 @@ body {
     }
 .dp{
   position:fixed;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   z-index: 1;
   margin-left: 100px;
   position: sticky;
@@ -48,7 +48,7 @@ body {
   background-position: center;
   margin-top: 100px;
   margin-bottom: 100px;
-
+  border-radius: 50%;
 }
  
 /* profile pic */
@@ -81,6 +81,14 @@ body {
 padding-top: 200px;
  justify-content: center;
 }
+
+#ntag1{
+  color: rgb(255, 255, 255);
+  
+}
+
+
+
 
 /* About section */
 #about-section{
@@ -192,8 +200,100 @@ img {
   text-align:center;
   height: 500px;
   margin-top: 100px;
-  justify-content: center;
+  width: 100%;
+ display: flex;
+    justify-content: center;  /* Horizontal center */
+    align-items: center;      /* Vertical center */
+    min-height: 100vh;   
 }
 #contact-form{
   color: white;
+}
+/* From Uiverse.io by DavidTM96 */ 
+.form {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  background-color: #0a192f;
+  border-radius: 20px;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #d064ff;
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ccd6f6;
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #db64ff;
+  font-weight: bold;
+  outline: 1px solid #db64ff;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #1c0137;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #a264ff 0%, #bc64ff 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(201, 100, 255, 0.3);
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
 }

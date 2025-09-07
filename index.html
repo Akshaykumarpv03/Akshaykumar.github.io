@@ -64,7 +64,7 @@
                     <div class="right-section">
                         <!-- name and tagline added -->
                         <div id="name-tag" class="sect">
-                          <h1 class="ntag">Akshay Here!</h1>
+                          <h1 id="ntag1"><b>Akshay</b> Here!</h1>
                           <p class="ntag" style="font-size: 20px;">Turning ideas into clean, functional code.</p>
                         </div>
 
@@ -160,22 +160,50 @@
             </div>
 
            <!-- contact - section -->
-            <div id="Contact">
-              <h2 style="font-size: 50px; color: white;">Contact</h2>
-              <br>
-              <div id="contact-form">
-                <form action="mailto:akshaykumarpv0987@gmail.com" method="post" enctype="text/plain">
-                  <label style="margin:20px;"  for="name">Name:</label>
-                  <input  type="text" id="name" name="name" required><br>
+            <div id="Contact" >
+                          <!-- From Uiverse.io by DavidTM96 --> 
+              <div class="form-card1 ">
+                <div class="form-card2">
+                  <form class="form" action="mailto:akshaykumarpv0987@gmail.com">
+                    <p class="form-heading">Get In Touch</p>
 
-                  <label style="margin:20px;" for="email">Email:</label>
-                  <input type="email" id="email" name="email" required><br>
+                    <div class="form-field">
+                      <input required="" placeholder="Name" class="input-field" type="text" />
+                    </div>
 
-                  <label style="margin:20px;" for="message">Message:</label>
-                  <input type="text" id="message" name="message"  max="100"   required><br><br>
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Email"
+                        class="input-field"
+                        type="email"
+                      />
+                    </div>
 
-                  <button type="submit">Send Message</button>
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Subject"
+                        class="input-field"
+                        type="text"
+                      />
+                    </div>
+
+                    <div class="form-field">
+                      <textarea
+                        required=""
+                        placeholder="Message"
+                        cols="30"
+                        rows="3"
+                        class="input-field"
+                      ></textarea>
+                    </div>
+
+                    <button class="sendMessage-btn">Send Message</button>
+                  </form>
+                </div>
               </div>
+
             </div>
 
         </div>
@@ -194,13 +222,13 @@
     canvas.height = window.innerHeight;
 
     const particlesArray = [];
-    const numParticles = 15;
+    const numParticles = 5;
 
     class Particle {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 10 + 1;
+        this.size = Math.random() * 5 + 1;
         this.speedX = (Math.random() - 0.5) * 2;
         this.speedY = (Math.random() - 0.5) * 2;
       }
