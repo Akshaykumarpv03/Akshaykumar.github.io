@@ -5,6 +5,7 @@
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
   
 }
 
@@ -37,18 +38,10 @@ body {
    
     }
 .dp{
-  position:fixed;
-  width: 400px;
-  height: 400px;
-  z-index: 1;
-  margin-left: 100px;
-  position: sticky;
-  background:url("dp.jpeg")center/cover no-repeat;
-  background-size: contain;  
-  background-position: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  padding-top: 100px;
 }
  
 /* profile pic */
@@ -68,18 +61,24 @@ body {
   z-index: 0;        /* Background layer */
 }
 
-#sticky-dp{
+/* Common div for name and dp */
+.name-dp{
   display: flex;
-  scrollbar-width: none;
+  align-items: center;
+  justify-content: center;
+    align-content: center;
 }
 
 /*Name and tag */
 #name-tag{
+
  text-align: center;
  color: white;
  margin-bottom: 500px;
 padding-top: 200px;
  justify-content: center;
+
+
 }
 
 #ntag1{
@@ -92,20 +91,12 @@ padding-top: 200px;
 
 /* About section */
 #about-section{
-  margin-top: 200px;
-  padding-top: 100px;
+  padding-top: 150px;
   text-align: center;
   color: white;
    margin-bottom: 300px;
 }
 
-.right-section{
-   flex: 1;
-      padding: 50px;
-      overflow-y: auto; /* enables scrolling */
-      height: 100vh;
-      scrollbar-width: none;
-}
 
 
 /* Project section */
