@@ -1,12 +1,13 @@
 .main-body{
   margin: 0;
   padding-top: 50px;
-   background: rgba(255, 255, 255, 0.09);
+   background: rgba(101, 101, 101, 0.189);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-  
+}
+html {
+  scroll-behavior: smooth;
 }
 .navbar{
 background: #c800ff;
@@ -21,7 +22,7 @@ background: linear-gradient(82deg, rgba(200, 0, 255, 1) 38%, rgba(0, 177, 242, 1
   100% {background-position: 0% 50%;}
 }
 .nav-item{
-  font-size: 17px;
+  font-size: 19px;
 }
 .navbar-brand-me-auto{
   font-size: 30px;
@@ -47,7 +48,7 @@ canvas {
 body {
     
       background: #0b53d9;
-      background: black;
+      background: rgb(0, 0, 0);
       height: 1000px;
    
     }
@@ -97,6 +98,7 @@ body {
 }
 
 .word {
+  font-size: 30px;
   display: block;
   height: 100%;
   padding-left: 10px;
@@ -217,8 +219,8 @@ padding-top: 200px;
  background-image: linear-gradient(200deg, #ff00fb 0%, #3700ff 100%);
  border-radius: 20px;
  transition: all .3s;
-margin-top: 50px;
-margin-bottom: 50px;
+margin-top: 25px;
+margin-bottom: 25px;
  
 }
 
@@ -242,9 +244,50 @@ margin-bottom: 50px;
 }
 
 /* Skill */
+.button1 {
+  margin: 10px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #9b18ff;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #dc15ff;
+}
+
+.button1:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #9e16ff;
+  box-shadow: 4px 5px 17px -4px #fb00ff;
+}
+
+.button1::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #c235ff;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button1:hover::before {
+  width: 250%;
+}
 
 #skill{
-  
+
+  justify-content: center;
   padding-top: 100px;
   text-align: center;
   color: white;
@@ -252,45 +295,7 @@ margin-bottom: 50px;
 }
 
 
-    .skill-container {
-      max-width: 500px;
-      margin: 20px auto;
-    }
-
-    .skill {
-      margin-bottom: 20px;
-    }
-
-    .skill-name {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    .progress-bar {
-      width: 100%;
-      background: #ffffff;
-      border-radius: 20px;
-      overflow: hidden;
-      height: 20px;
-    }
-
-    .progress {
-      height: 100%;
-      text-align: right;
-      padding-right: 5px;
-      line-height: 20px;
-      color: #fff;
-      border-radius: 20px;
-    }
-
-    .html { width: 95%; background: #39fcff; }   /* Orange for HTML */
-    .python { width: 90%; background: #17ffff; } /* Blue for Python */
-    .mysql { width: 95%; background: #15ebff; }  /* Teal for MySQL */
-    .c { width: 100%; background: #16fbff; }  /* Teal for MySQL */
-    .java { width: 50%; background: #0dffef; }  /* Teal for MySQL */
-    .css { width: 95%; background: #13ffef; }  /* Teal for MySQL */
-    .js { width: 60%; background: #06f3ff; }  /* Teal for MySQL */
- 
+  /* CONTACT */
  
 #Contact{
   text-align:center;
