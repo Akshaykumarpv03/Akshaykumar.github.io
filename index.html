@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Akshay</title>
+     <link rel="icon" href="icona.png" type="image/x-icon" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
@@ -63,7 +64,7 @@
         <div class="main-body ">
          
                           
-                  <div class="row ">
+                  <div class="row reveal ">
                       <!-- Image Section -->
                       <div class="col-12 col-md-6 text-center">
                           <div class="dp" id="home">
@@ -82,21 +83,25 @@
         
 
                         <!-- About section -->
-                        <div id="about-section" class="sect">
+                         <div class="reveal " style=" display: flex;   justify-content: center;">
+
+                     
+                        <div id="about-section" style="max-width: 800px; text-align: center;" >
                           <h2 style="font-size: 50px;">About</h2>
                           <br> 
                           <p style="font-size: 20px;">
                             Student at College of Enginering Trikaripur, pursuing Btech in Computer Science
-                            And Enginering. <br> I’m passionate about learning, growing, and using my skills to<br>
+                            And Enginering.  I’m passionate about learning, growing, and using my skills to
                             build something meaningful and inspiring.
                           </p>
                         </div>
+                            </div>
               
               
           
 
            <!-- Skills -->
-            <div id="skill">
+            <div id="skill" class="reveal">
               <h2 style="font-size: 50px; color: white;">Skills</h2>
               <div>
               <button class="button1">HTML</button>
@@ -113,7 +118,7 @@
             </div>
 
            <!-- Project -->
-            <div id="Project" >
+            <div id="Project" class="reveal" >
               <h2 style="font-size: 50px; margin: 100px;">Projects</h2>
               <div class="row">
               <div class=" col-12 col-sm-12 col-ms-6 col-lg-6 col-xl-6 " style=" justify-content: center; display: flex;" >
@@ -145,7 +150,7 @@
             </div>
 
            <!-- contact - section -->
-           <h2  id ="contact" style="font-size: 50px; margin: 100px; color: white; text-align: center; margin: 0;padding-top: 100px; margin-top: 100px; ">Contact me</h2>
+           <h2  id ="contact" class="reveal" style="font-size: 50px; margin: 100px; color: white; text-align: center; margin: 0;padding-top: 100px; margin-top: 100px; ">Contact me</h2>
             <div id="Contact" >
               
                           <!-- From Uiverse.io by DavidTM96 --> 
@@ -276,7 +281,15 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
+      ScrollReveal().reveal('.reveal', {
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'bottom',
+    reset: false  // true if you want the animation to replay when scrolling up
+  });
       // Particle Background
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
